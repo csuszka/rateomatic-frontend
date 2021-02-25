@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Dashboard from './Dashboard';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           Learn React
   </a>*/}
       </header>
+      <Dashboard />
     </div>
   );
 }
