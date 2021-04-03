@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  frontend-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: rateomatic-frontend-dev
+    ports:
+      - "3000:3000"
+    
+  frontend-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    container_name: rateomatic-frontend-prod
+    ports:
+      - "3001:80"
